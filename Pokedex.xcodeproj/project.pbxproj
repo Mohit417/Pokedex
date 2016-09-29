@@ -17,6 +17,8 @@
 		3CFC6F3D1D98719100B4EBB5 /* pokeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC6F3C1D98719100B4EBB5 /* pokeData.json */; };
 		3CFC6F3F1D9871F100B4EBB5 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC6F3E1D9871F100B4EBB5 /* Pokemon.swift */; };
 		3CFC6F411D9871FC00B4EBB5 /* PokemonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC6F401D9871FC00B4EBB5 /* PokemonGenerator.swift */; };
+		E424689C1D9D12690080B733 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424689B1D9D12690080B733 /* PokemonViewController.swift */; };
+		E424689E1D9D1CEC0080B733 /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424689D1D9D1CEB0080B733 /* PokemonCollectionViewCell.swift */; };
 		EF1A6B3E1D9A08C500CDBA5C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6B3D1D9A08C500CDBA5C /* ProfileViewController.swift */; };
 		EF1A6B401D9A08DA00CDBA5C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6B3F1D9A08DA00CDBA5C /* FavoritesViewController.swift */; };
 		EF1A6B421D9A08F400CDBA5C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6B411D9A08F400CDBA5C /* ListViewController.swift */; };
@@ -57,6 +59,8 @@
 		3CFC6F3C1D98719100B4EBB5 /* pokeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokeData.json; sourceTree = "<group>"; };
 		3CFC6F3E1D9871F100B4EBB5 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		3CFC6F401D9871FC00B4EBB5 /* PokemonGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonGenerator.swift; sourceTree = "<group>"; };
+		E424689B1D9D12690080B733 /* PokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		E424689D1D9D1CEB0080B733 /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF1A6B3D1D9A08C500CDBA5C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EF1A6B3F1D9A08DA00CDBA5C /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		EF1A6B411D9A08F400CDBA5C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				3CFC6F1A1D98716000B4EBB5 /* Info.plist */,
 				3CFC6F3E1D9871F100B4EBB5 /* Pokemon.swift */,
 				3CFC6F401D9871FC00B4EBB5 /* PokemonGenerator.swift */,
+				E424689B1D9D12690080B733 /* PokemonViewController.swift */,
+				E424689D1D9D1CEB0080B733 /* PokemonCollectionViewCell.swift */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -283,11 +289,13 @@
 			files = (
 				EF419CDF1D9B60F200D4F23E /* TypeCollectionViewCell.swift in Sources */,
 				3CFC6F111D98716000B4EBB5 /* SearchViewController.swift in Sources */,
+				E424689C1D9D12690080B733 /* PokemonViewController.swift in Sources */,
 				3CFC6F411D9871FC00B4EBB5 /* PokemonGenerator.swift in Sources */,
 				EF1A6B3E1D9A08C500CDBA5C /* ProfileViewController.swift in Sources */,
 				3CFC6F0F1D98716000B4EBB5 /* AppDelegate.swift in Sources */,
 				EF1A6B401D9A08DA00CDBA5C /* FavoritesViewController.swift in Sources */,
 				3CFC6F3F1D9871F100B4EBB5 /* Pokemon.swift in Sources */,
+				E424689E1D9D1CEC0080B733 /* PokemonCollectionViewCell.swift in Sources */,
 				EF1A6B421D9A08F400CDBA5C /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,24 +37,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-aU-AhT">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-aU-AhT">
                                 <frame key="frameInset" minY="64" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6g-dG-Ggd">
-                                <frame key="frameInset" minX="164" minY="130" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6g-dG-Ggd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="LEW-f5-e2J"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TsJ-o7-ah0" firstAttribute="top" secondItem="P6g-dG-Ggd" secondAttribute="bottom" constant="507" id="KVg-dM-Nsk"/>
+                            <constraint firstItem="P6g-dG-Ggd" firstAttribute="top" secondItem="KR9-aU-AhT" secondAttribute="bottom" constant="22" id="NBV-TY-nGx"/>
+                            <constraint firstItem="P6g-dG-Ggd" firstAttribute="leading" secondItem="6qd-hv-O2K" secondAttribute="leading" constant="164" id="NcN-hd-Beo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="auB-s1-p6R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWH-dK-Jrx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="45"/>
+            <point key="canvasLocation" x="-63.200000000000003" y="44.527736131934034"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="7It-uJ-5bu">
@@ -361,6 +366,7 @@
         <!--Search-->
         <scene sceneID="anx-bi-EaO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQl-Gj-0fC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="3ek-2C-k2E" customClass="ListViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qJ9-qm-seE"/>
@@ -369,57 +375,30 @@
                     <view key="view" contentMode="scaleToFill" id="9dY-s7-Pvn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BDH-z8-1Bc">
-                                <frame key="frameInset" minX="127" minY="64" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="List"/>
-                                    <segment title="Grid"/>
-                                </segments>
-                            </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2BX-cu-9cQ">
-                                <frame key="frameInset" minY="100" width="375" height="567"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O1J-tN-zkI">
-                                    <size key="itemSize" width="125" height="125"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TG9-bo-PMe">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0o-To-l56">
-                                                    <frame key="frameInset" minX="12" width="100" height="91"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeI-Ii-pfn">
-                                                    <frame key="frameInset" minX="41" minY="96" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="DqS-DA-44y"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gQl-Gj-0fC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="950" y="806"/>
+        </scene>
+        <!--Pokemon View Controller-->
+        <scene sceneID="zMz-Ge-728">
+            <objects>
+                <viewController id="j21-9Y-Jiv" customClass="PokemonViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XFZ-X8-ClN"/>
+                        <viewControllerLayoutGuide type="bottom" id="QuD-Zp-7WY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FVQ-Xh-gJD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npc-LX-Asv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.60000000000002" y="805.54722638680664"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mxS-lO-oVc">

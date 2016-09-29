@@ -11,6 +11,9 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    
+    
+    
     struct typeObject {
         var typeName: String
         var typeSymbol: UIImage
